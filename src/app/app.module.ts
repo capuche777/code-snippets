@@ -1,16 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {HomePageModule} from './home-page/home-page.module';
 
 @NgModule({
-  declarations: [
+    declarations: [
     AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    ],
+    imports: [
+        BrowserModule,
+        FlexLayoutModule,
+        HomePageModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
