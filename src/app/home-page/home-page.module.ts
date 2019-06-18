@@ -4,6 +4,7 @@ import {HomePageConrollerComponent} from './home-page-conroller/home-page-conrol
 import {LanguageBarComponent} from './language-bar/language-bar.component';
 import {SnippetAdderComponent} from './snippet-adder/snippet-adder.component';
 import {SnippetCardComponent} from './snippet-card/snippet-card.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import {SnippetCardComponent} from './snippet-card/snippet-card.component';
         HomePageConrollerComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        FlexLayoutModule
     ]
 })
 export class HomePageModule {
